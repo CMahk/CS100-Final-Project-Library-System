@@ -25,10 +25,10 @@ The Library System is a tool that allows for the client to add media like books 
 	* **Chandler:** To create a functional database of consumable media, the Composite design pattern will be used. This design pattern can be used to create an a base class that can then be utilized to create a hierarchy of objects representing the library's database. This database can then be traversed easily to present the data that the user requests, including individual books and entire categories of books.
 
 ## Class Diagrams
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/FinalFacade.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/FinalFacade.png)
 This diagram shows how I will be utilizing the facade design pattern to conceal all of the complex code from the user. The Library_Facade will be the class that the user will be interacting with to perform all the actions such as borrowing a book, logging in, creating an account, paying off an debts, etc. There are multiple classes that will be used to assist the facade in retreving, adding, or removing any of the necessary information. After the interface is implemented, the user will simply have to type in input which will then call the functions within the Library_Facade class. The Library_Facade class will then utilize the other classes to correctly perform the action. For example, if the user wants to login, they will simply have to type in their username and password. The Library_Facade will use a function call that utilizes the class User to check and see if the inputs values are already in the system. If it is then the user will be logged in, and if not the user will be given an error message. The bookManager is there as a place holder because Chandler will be handling the database part of the project. It is also a huge a reason for using facade because the facade will allow easy access for the user to retrieve any wanted information from the database. The facade will bascially provide one simple/easy-to-use class that will be able to provide all the functionality which will mask all the complex code that is within the other classes.
  
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/Composite.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/Composite.png)
 This diagram describes how I will be utilizing the composite design pattern to create an interface to a functional database storing categories that then store individual books. The Library_Facade instantiates the BookManager as the Library_Facade class will be utilizing the manager to add and remove contents at will. 
 * The BookManager class contains a vector that can add or remove Category objects from itself. The BookManager can display the entire class' hierarchy of categories and books stored, or just the names of the categories it is holding. The manager can also modify a category's title, modify which category a Book object is in, or find a Book within its categories. 
 
@@ -38,49 +38,49 @@ This diagram describes how I will be utilizing the composite design pattern to c
 
 ## Screenshots
 Exiting before account creation/logging in
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20154204.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20154204.png)
 
 Invalid Input
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/invalid%20input.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/invalid%20input.png)
 
 Incorrect Login (retry)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20154333.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20154333.png)
 
 Incorect Login (make new account)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20154422.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20154422.png)
 
 New Account 
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20154452.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20154452.png)
 
 All Library functionality (display, borrow, add, remove, etc...)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20154602.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20154629.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20155047.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20155151.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20160321.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20160657.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/Screenshot%202020-12-09%20161633.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20154602.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20154629.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20155047.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20155151.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20160321.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20160657.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/Screenshot%202020-12-09%20161633.png)
 
 Export function
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/export.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/exportFile.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/export.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/exportFile.png)
 
 Import Function
 
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/import.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/import.png)
 
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/import2.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/import2.png)
 
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/import3.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/import3.png)
 
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/import4.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/import4.png)
 
  ## Installation/Usage
  Our program is simple and easy to use. You only need to clone the repository and run it inside of the console. Although, you will need Google tests and cmake installed to run it exactly the way we run it.
  ## Testing
  For testing we decided to go with google tests to confirm that our class functions are fully functional before we incorporated it into our interface.
  
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/test%20pt1.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/test%20pt2.png)
-![](https://github.com/cs100/final-project-cmahk001-kdo055-aliu112/blob/master/InputOutput/test%20pt3.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/test%20pt1.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/test%20pt2.png)
+![](https://github.com/CMahk/CS100-Final-Project-Library-System/blob/main/InputOutput/test%20pt3.png)
  
